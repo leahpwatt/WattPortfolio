@@ -2,39 +2,19 @@
 * {font-family: Georgia, serif;
 }
 
-/*@font-face {
-    font-family: 'harabarahanditalic';
-    src: url('fonts/HarabaraHand-webfont.eot');
-    src: url('fonts/HarabaraHand-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/HarabaraHand-webfont.woff') format('woff'),
-         url('fonts/HarabaraHand-webfont.ttf') format('truetype'),
-         url('fonts/HarabaraHand-webfont.svg#harabarahanditalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}*/
-
 body {
 	background-color: rgb(242, 242, 242);
 	background-color: rgba(0, 0, 0, 0.1);
-/*	background-image: url("images/himalayas.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-	background-size: cover;*/
 	margin: 0;
 	color: black;
+	text-align: center;
 }
 
 #header {
-	font-family: 'harabarahanditalic', Georgia, Serif;
-	background-color: rgb(38, 77, 115);
-	/*background-image: url("images/himalayas.jpg");
-	background-size: cover;*/
+	font-family: Georgia, Serif;
+	background-image: url("images/texture2.jpg");
 	font-size: 1.25em;
 	text-align: center;
-	/*border-style: solid;
-	border-width: 8px;
-	border-color: rgb(38, 77, 115);*/
 	padding: 5px;
 }
 
@@ -43,7 +23,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333333;
+    background-color: rgb(0, 26, 51);
 }
 
 li {
@@ -60,36 +40,11 @@ li a {
 
 li a:hover {
     background-color: rgb(38, 77, 115);
+    text-decoration: underline;
 }
 
 h1 {color: rgb(242, 242, 242);
-	/*text-shadow: 1px 1px 0px #000000;*/
-}
-
-#leah {
-	position: absolute;
-	left: 30%;
-	/*background-image: url("images/himalayas.jpg");*/
-	height: 320px;
-	width: 400px;
-	margin: 10px auto 10px auto;
-	background-color: rgb(38, 77, 115);
-	border-style: solid;
-	border-width: 2px;
-	border-color: #333333;
-	margin-top: 20px;
-	padding: 15px;
-	color: rgb(242, 242, 242);
-}
-
-blockquote { 
-	margin-top: 60px;
-	float: right;
-	width: 250px;
-	font-size: 1.5em;
-	background-color: rgb(38, 77, 115);
-	padding: 10px;
-	color: rgb(242, 242, 242);
+	text-shadow: 1px 1px 0px #000000;
 }
 
 img { 
@@ -97,55 +52,94 @@ img {
 	border-width: 2px;
 	border-color: #333333;
 	margin-top: 20px;
-	/*box-shadow: 10px 10px 5px #888888;*/
+	height: 250px;
+}
+
+blockquote { 
+	width: 250px;
+	font-size: 1.5em;
+	background-color: rgb(38, 77, 115);
+	border-style: solid;
+	border-width: 2px;
+	border-color: #333333;
+	padding: 8px;
+	margin: auto;
+	color: rgb(242, 242, 242);
+}
+
+#leah, .img1 {
+	vertical-align: top;
+    display: inline-block;
+    margin: 25px 25px 25px auto;
+    border-radius: 10px;
+ }
+
+#leah {
+	display: inline-block;
+	height: 325px;
+	width: 400px;
+	background-color: rgb(38, 77, 115);
+	border-style: solid;
+	border-width: 4px;
+	border-color: #333333;
+	margin-top: 20px;
+	padding: 15px;
+	color: rgb(242, 242, 242);
 }
 
 .img1 { 
-	position: absolute;
-    left: 2%;
-    border-width: 2px;
+    display: inline-block;
+    border-width: 4px;
     border-color: #333333;
+    height: 350px;
+}
+
+form, #contact { 
+	vertical-align: top;
+    display: inline-block;
+    margin: 25px 25px 25px auto;
 }
 
 form {
-	position: absolute;
-    left: 2%;
 	color: #333333;
 	border-style: solid;
 	border-width: 4px;
 	border-color: #333333;
 	border-radius: 10px;
-	margin: 10px auto 10px auto;
-	height: 360px;
+	height: 330px;
 	width: 340px;
 	padding: 10px;
 	font-size: 1.5em;
-	/*text-align: center;*/
+	box-shadow: 5px 5px 5px #888888;
 }
 
-a:link {
-	color: rgb(38, 77, 115);
-	text-decoration: none;
+input, textarea {
+	margin: 10px;
  }
 
-/*a:visited {
-	color: rgb(0, 163, 204);
- }*/
-
 #contact { 
-	position: absolute;
-    left: 40%;
 	color: #333333;
 	border-style: solid;
 	border-width: 4px;
 	border-color: #333333;
 	border-radius: 10px;
-	margin: 10px auto 10px auto;
-	height: 240px;
+	height: 250px;
 	width: 300px;
 	padding: 5px;
 	font-size: 1.5em;
-	/*text-align: center;*/
+	text-align: center;
+	box-shadow: 5px 5px 5px #888888;
+	margin-top: 65px;
+}
+
+#contact a:link {
+	color: #333333;
+	text-decoration: underline;}
+#contact a:hover {
+	background-color: transparent;}
+#contact a:visited, #contact a:active {
+  color: #333333;
+  text-decoration: none;
 }
 
 input { 
@@ -157,12 +151,11 @@ input {
 }
 
 footer {
-	display: block;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 50px;
-	background-color: rgb(38, 77, 115);
+	background-color: rgb(0, 26, 51);
 	color: rgb(242, 242, 242);
 	text-align: left;
 	text-indent: 15px;
