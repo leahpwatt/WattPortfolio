@@ -110,7 +110,7 @@ form {
 	width: 340px;
 	padding: 10px;
 	font-size: 1.5em;
-	/*box-shadow: 5px 5px 5px #888888;*/
+	box-shadow: 5px 5px 5px #888888;
 }
 
 input, textarea {
