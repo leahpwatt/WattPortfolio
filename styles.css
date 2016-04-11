@@ -55,7 +55,7 @@ img {
 	height: 250px;
 }
 
-/*blockquote { 
+blockquote { 
 	width: 250px;
 	font-size: 1.5em;
 	background-color: rgb(38, 77, 115);
@@ -65,7 +65,7 @@ img {
 	padding: 8px;
 	margin: auto;
 	color: rgb(242, 242, 242);
-}*/
+}
 
 #leah, .img1 {
 	vertical-align: top;
